@@ -1,0 +1,12 @@
+<form action="/new_package" method="POST">
+
+  <!-- {{form.hidden_tag()}} -->
+  {{form.csrf_token}}
+  {{form.sender_name.label}} {{form.sender_name}}
+  {{form.recipient_name.label}} {{form.recipient_name}}
+  {{form.origin.label}} {{form.origin}}
+  {{form.destination.label}} {{form.destination}}
+  {{form.express_shipping.label}} {{form.express_shipping}}
+  {{form.submit}}
+  {{form.cancel}}
+</form>
