@@ -1,0 +1,13 @@
+<div action="/" method="GET">
+    {% for package in packages %}
+        <div>
+            {{ package.id}}
+            {{ package.sender}}
+            {{ package.recipient}}
+            {{ package.origin}}
+            {{ package.destination}}
+            {{ package.location}}
+        </div>
+
+    {% endfor %}
+</div>

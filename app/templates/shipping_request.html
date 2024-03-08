@@ -1,7 +1,6 @@
 <form action="/new_package" method="POST">
 
-  <!-- {{form.hidden_tag()}} -->
-  {{form.csrf_token}}
+  {{form.hidden_tag()}}
   {{form.sender_name.label}} {{form.sender_name}}
   {{form.recipient_name.label}} {{form.recipient_name}}
   {{form.origin.label}} {{form.origin}}
